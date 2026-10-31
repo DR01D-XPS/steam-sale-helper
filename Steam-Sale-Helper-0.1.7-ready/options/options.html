@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steam Sale Helper</title>
+    <script type="module" crossorigin src="/options/options.js"></script>
+    <link rel="stylesheet" crossorigin href="/options/options.css">
+  </head>
+  <body>
+    <main class="steam-sale-helper-options">
+      <h1>Steam Sale Helper</h1>
+      <section>
+        <label><input id="enabled" type="checkbox" /> Включить расширение</label>
+        <label>Порог цены, % <input id="priceRatio" type="number" min="0" max="100" step="1" /></label>
+        <label>Порог скидки, п.п. <input id="discountPp" type="number" min="0" max="100" step="1" /></label>
+        <label>Кэш истории цен, часов <input id="cacheTtl" type="number" min="1" max="168" step="1" /></label>
+        <label><input id="debug" type="checkbox" /> Отладка</label>
+        <label>
+          Провайдер данных
+          <select id="provider">
+            <option value="mock">Тестовые данные</option>
+            <option value="steamdb">История цен</option>
+          </select>
+        </label>
+      </section>
+      <div class="steam-sale-helper-options__actions">
+        <button id="save" type="button">Сохранить</button>
+        <button id="clearCache" type="button">Очистить кэш</button>
+        <button id="refreshCalendar" type="button">Обновить календарь распродаж</button>
+      </div>
+      <p id="status" role="status"></p>
+    </main>
+  </body>
+</html>

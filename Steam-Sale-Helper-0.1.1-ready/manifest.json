@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Sale Helper",
+  "version": "0.1.1",
+  "description": "Forecasts better Steam cart prices using SteamDB-like history and the Steam sale calendar.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://store.steampowered.com/*",
+    "https://steamdb.info/*",
+    "https://steamcommunity.com/*"
+  ],
+  "background": {
+    "service_worker": "background/index.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://store.steampowered.com/cart/", "https://store.steampowered.com/cart/*"],
+      "js": ["content/index.js"],
+      "css": ["styles/cart.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options/options.html",
+  "icons": {
+    "16": "icons/icon16.svg",
+    "32": "icons/icon32.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  },
+  "action": {
+    "default_title": "Steam Sale Helper",
+    "default_icon": {
+      "16": "icons/icon16.svg",
+      "32": "icons/icon32.svg"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles/cart.css"],
+      "matches": ["https://store.steampowered.com/*"]
+    }
+  ]
+}

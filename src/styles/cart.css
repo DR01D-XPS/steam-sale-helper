@@ -1,0 +1,230 @@
+.steam-sale-helper__summary,
+.steam-sale-helper__game-card,
+.steam-sale-helper__status {
+  box-sizing: border-box;
+  color: #c7d5e0;
+  background: linear-gradient(180deg, #223246 0%, #16202d 100%);
+  border: 1px solid rgba(102, 192, 244, 0.18);
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.steam-sale-helper__status {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.steam-sale-helper__status--ok {
+  border-color: rgba(164, 208, 7, 0.24);
+}
+
+.steam-sale-helper__status--warning {
+  border-color: rgba(210, 157, 80, 0.34);
+}
+
+.steam-sale-helper__summary {
+  margin: 0 0 12px;
+  padding: 12px 14px;
+}
+
+.steam-sale-helper__summary-label,
+.steam-sale-helper__label,
+.steam-sale-helper__dates,
+.steam-sale-helper__reason,
+.steam-sale-helper__summary-saving,
+.steam-sale-helper__summary-note {
+  color: #8f98a0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.steam-sale-helper__summary-price {
+  color: #a4d007;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.steam-sale-helper__game-card {
+  clear: both;
+  margin: 10px 0 2px;
+  padding: 12px;
+  animation: steam-sale-helper__fade-in 180ms ease-out;
+  transition: border-color 160ms ease, transform 160ms ease;
+}
+
+.steam-sale-helper__game-card:hover {
+  border-color: rgba(102, 192, 244, 0.38);
+  transform: translateY(-1px);
+}
+
+.steam-sale-helper__game-card--error {
+  border-color: rgba(190, 80, 70, 0.35);
+}
+
+.steam-sale-helper__game-card--no-data {
+  border-color: rgba(210, 157, 80, 0.3);
+}
+
+.steam-sale-helper__game-card--buy-now {
+  border-color: rgba(164, 208, 7, 0.32);
+}
+
+.steam-sale-helper__header,
+.steam-sale-helper__price-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.steam-sale-helper__header {
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.steam-sale-helper__sale-name,
+.steam-sale-helper__state-title {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.steam-sale-helper__sale-name {
+  display: inline-flex;
+  width: fit-content;
+  padding: 2px 7px;
+  border: 1px solid rgba(164, 208, 7, 0.28);
+  border-radius: 3px;
+  background: rgba(164, 208, 7, 0.08);
+  color: #66c0f4;
+  text-shadow: 0 0 12px rgba(102, 192, 244, 0.18);
+}
+
+.steam-sale-helper__confidence,
+.steam-sale-helper__discount-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.steam-sale-helper__confidence--high,
+.steam-sale-helper__discount-badge {
+  color: #e7f6cf;
+  background: rgba(107, 146, 32, 0.85);
+}
+
+.steam-sale-helper__confidence--medium {
+  color: #f3e6c7;
+  background: rgba(162, 111, 42, 0.72);
+}
+
+.steam-sale-helper__confidence--low {
+  color: #c7d5e0;
+  background: rgba(86, 105, 124, 0.72);
+}
+
+.steam-sale-helper__dates {
+  margin-bottom: 10px;
+  display: inline-flex;
+  width: fit-content;
+  padding: 3px 7px;
+  border: 1px solid rgba(102, 192, 244, 0.22);
+  border-radius: 3px;
+  background: rgba(102, 192, 244, 0.08);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.steam-sale-helper__price-row {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.steam-sale-helper__metric {
+  min-width: 96px;
+}
+
+.steam-sale-helper__expected-price {
+  color: #a4d007;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.steam-sale-helper__current-price {
+  color: #8f98a0;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+.steam-sale-helper__saving {
+  margin-top: 9px;
+  color: #a4d007;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.steam-sale-helper__reason {
+  margin-top: 6px;
+}
+
+.steam-sale-helper__skeleton {
+  position: relative;
+  height: 10px;
+  margin-top: 12px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.steam-sale-helper__skeleton::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(90deg, transparent, rgba(102, 192, 244, 0.22), transparent);
+  animation: steam-sale-helper__skeleton 1.1s infinite;
+}
+
+@keyframes steam-sale-helper__fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes steam-sale-helper__skeleton {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 640px) {
+  .steam-sale-helper__header,
+  .steam-sale-helper__price-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .steam-sale-helper__confidence,
+  .steam-sale-helper__discount-badge {
+    white-space: normal;
+  }
+}

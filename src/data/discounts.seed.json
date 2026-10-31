@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-19",
+  "entries": [
+    {
+      "id": "red-dead-redemption-bundle-kzt-summer-2026",
+      "titleIncludes": "Red Dead Redemption",
+      "currency": "KZT",
+      "saleId": "summer-sale-2026",
+      "saleName": "☀️ Летняя распродажа",
+      "expectedPriceMinor": 1982300,
+      "expectedDiscountPercent": 41,
+      "confidence": "medium",
+      "updatedAt": "2026-06-19",
+      "note": "Цена 19 823 ₸ из прикрепленного скрина."
+    },
+    {
+      "id": "hades-kzt-summer-2026",
+      "appId": "1145360",
+      "titleIncludes": "Hades",
+      "currency": "KZT",
+      "saleId": "summer-sale-2026",
+      "saleName": "☀️ Летняя распродажа",
+      "expectedPriceMinor": 160000,
+      "expectedDiscountPercent": 75,
+      "confidence": "low",
+      "updatedAt": "2026-06-19",
+      "note": "Ориентир по историческому минимуму CheapShark: около -75%."
+    },
+    {
+      "id": "cult-of-the-lamb-kzt-summer-2026",
+      "appId": "1313140",
+      "titleIncludes": "Cult of the Lamb",
+      "currency": "KZT",
+      "saleId": "summer-sale-2026",
+      "saleName": "☀️ Летняя распродажа",
+      "expectedPriceMinor": 300000,
+      "expectedDiscountPercent": 50,
+      "confidence": "medium",
+      "updatedAt": "2026-06-19",
+      "note": "Текущая скидка Steam -50% уже равна ожидаемой цене."
+    },
+    {
+      "id": "control-ultimate-edition-kzt-summer-2026",
+      "appId": "870780",
+      "titleIncludes": "Control Ultimate Edition",
+      "currency": "KZT",
+      "saleId": "summer-sale-2026",
+      "saleName": "☀️ Летняя распродажа",
+      "expectedPriceMinor": 148500,
+      "expectedDiscountPercent": 85,
+      "confidence": "low",
+      "updatedAt": "2026-06-19",
+      "note": "Осторожный ориентир по текущим внешним скидкам: около -85%."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  color: #c7d5e0;
+  background: #1b2838;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.steam-sale-helper-options {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.steam-sale-helper-options h1 {
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.steam-sale-helper-options section {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid rgba(102, 192, 244, 0.18);
+  border-radius: 6px;
+  background: #16202d;
+}
+
+.steam-sale-helper-options label {
+  display: grid;
+  gap: 6px;
+  color: #c7d5e0;
+  font-size: 14px;
+}
+
+.steam-sale-helper-options input,
+.steam-sale-helper-options select,
+.steam-sale-helper-options button {
+  min-height: 34px;
+  border: 1px solid rgba(102, 192, 244, 0.22);
+  border-radius: 4px;
+  color: #e5eef7;
+  background: #223246;
+}
+
+.steam-sale-helper-options input[type="checkbox"] {
+  min-height: auto;
+  justify-self: start;
+}
+
+.steam-sale-helper-options__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.steam-sale-helper-options button {
+  cursor: pointer;
+  padding: 0 14px;
+}
+
+.steam-sale-helper-options button:hover {
+  border-color: rgba(102, 192, 244, 0.55);
+}
+
+#status {
+  min-height: 20px;
+  color: #a4d007;
+}
